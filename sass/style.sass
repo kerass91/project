@@ -1,0 +1,24 @@
+$tex_color: red
+@mixin box
+    display: block
+    width: 250px
+    height: 200px   
+    background-color: red    
+   
+
+h1
+    color: $tex_color
+    font-size: 50px 
+h2
+    color: blue 
+.block
+    background-color: $tex_color 
+    h3
+        color: $tex_color
+ &_color
+     background-color: #fff
+     button
+         @include box
+    .block_color
+        color: $tex_color 
+       
